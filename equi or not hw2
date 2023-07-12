@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    //hw2
+    int a,b,c;
+    printf("enter the 3 sides of the triangle :\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    (a==b && b==c)? printf("its an equilateral triangle "):printf("its not an equilateral triangle ");
+    
+    return 0;
+}
