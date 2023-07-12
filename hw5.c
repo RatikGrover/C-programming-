@@ -8,7 +8,7 @@ int main()
     scanf("%d",&quantity);
     amount=cost*quantity;
     printf("\nThe cost of product purchased is: %d",amount);
-    discount=amount/10;
+    discount=(10*amount)/100;
     printf("\nThe discount on product purchased is 10%%: %d",discount);
     netAmount=amount-discount;
     printf("\nThe netAmount to be paid on product purchased is: %d",netAmount);
