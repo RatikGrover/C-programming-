@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    //hw1
+    int l,b;
+    printf("input l of cardboard in cm: \n");
+    scanf("%d",&l);
+    printf("input b of cardboard in cm: \n");
+    scanf("%d",&b);
+    (l==b)? printf("it is a square "):printf("it is a rectangle");
+
+    return 0;
+}
