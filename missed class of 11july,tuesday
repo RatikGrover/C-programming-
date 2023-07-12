@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    /*printf("Hello World\n");
+    printf("%% calculate ka formula %f\n",600*.2);
+    int total=100,num=40;
+    //total=total+num;
+    total+=num;
+    printf("The value of total is %d",total);
+    int n=50;
+    n+=35;
+    printf("\nThe value of n is %d",n);*/
+
+
+    
+    /*int cp,sp;
+    printf("enter selling price: ");
+    scanf("%d",&sp);
+    printf("enter cost price: ");
+    scanf("%d",&cp);
+    (sp>=cp)? printf("profit is %d",sp-cp):printf("loss is %d",sp-cp);
+    */
+
+     int p,c,m;
+    printf("enter marks of p,c,m :\n");
+    scanf("%d",&p);
+    scanf("%d",&c);
+    scanf("%d",&m);
+    
+    
+    
+    
+    (p>95 || c>95 || m>95)? printf("scholarship granted"):printf("no scholarship");
+    
+    return 0;
+}
