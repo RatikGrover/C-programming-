@@ -1,0 +1,64 @@
+// write a program to input age of a person and print if he is senior citizen or not
+
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int age;
+    printf("enter age :\n");
+    scanf("%d",&age);
+    (age>60)?printf("\nsenior citizen"):printf("not a senior citizen");
+    return 0;
+}
+
+
+// //write a program to input three numbers and find greatest number out of that
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,g;
+    printf("\nenter 3 numbers: \n");
+    scanf("%d%d%d",&a,&b,&c);
+    g= (a>b)? ((a>c)?a:c):((b>c)? b:c);
+
+    printf("\ngreatest of %d %d and %d is: %d",a,b,c,g);
+
+
+    return 0;
+}
+
+
+
+//input two numbers and interchange their value using 3rd variable
+
+#include<stdio.h>
+int main()
+{
+    int a,b,temp;
+    printf("enter 2 numbers a and b: \n");
+    scanf("%d%d",&a,&b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("\nthe interchanged values of a and b are : %d and %d",a,b);
+    return 0;
+}
+
+
+
+//swap two variables without using third variable.
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter 2 numbers a and b: \n");
+    scanf("%d%d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    
+    printf("\nthe interchanged values of a and b are : %d and %d",a,b);
+    return 0;
+}
