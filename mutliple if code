@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int percent;    
+    printf("\nenter percentage :");
+    scanf("\n%d",&percent);
+    if (percent>=90 && percent<100)
+    {
+        printf("\nA grade");
+    }
+    if (percent>=80 && percent<90)
+    {
+        printf("\nB grade");
+    }
+    if (percent>=65 && percent<80)
+    {
+        printf("\nC grade");
+    }
+    if (percent<65)
+    {
+        printf("fail");
+    }
+    if (percent==100)
+    {
+        printf("perfect score");
+    }
+    
+    
+    return 0;
+}
