@@ -1,0 +1,61 @@
+#include<stdio.h>
+int main()
+{
+    float r,l,b,result;
+    int ch1,ch2;
+    printf("\nPress -1 for circle ");
+    printf("\nPress -2 for rectangle ");
+    printf("\nEnter a choice :");
+    scanf("%d",&ch1);
+    switch (ch1)
+    {
+    case 1:
+        printf("\nCalculating a circle :");
+        printf("\nPress -1 for Area:");
+        printf("\nPress -2 for circumference:\n");
+        scanf("%d",&ch2);
+        printf("\nEnter a radius :\n");
+        scanf("%f",&r);
+        switch (ch2)
+        {
+        case 1:
+            result=3.14*r*r;
+            printf("\nThe area is %.2f",result);
+            break;
+        case 2:
+            result=3.14*2*r;
+            printf("\nThe circumference is %.2f",result);
+            break;
+        default:
+            printf("\nInvalid choice ");
+            break;
+        }            
+        break;
+    case 2:
+        printf("\nCalculating a rectangle :");
+        printf("\nPress -1 for Area:");
+        printf("\nPress -2 for Perimeter:\n");
+        scanf("%d",&ch2);
+        printf("\nEnter length and breath :\n");
+        scanf("%f %f",&l,&b);
+        switch (ch2)
+        {
+        case 1:
+            result=l*b;
+            printf("\nThe area is %.2f",result);
+            break;
+        case 2:
+            result=2*(l+b);
+            printf("\nThe perimeter is %.2f",result);
+            break;
+        default:
+            printf("\nInvalid choice ");
+            break;
+        }
+        default:
+            printf("\nCHOOSE FROM 1 OR 2:");
+            break;
+    }
+    printf("\n\n");
+    return 0;
+}
